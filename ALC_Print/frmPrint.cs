@@ -15,6 +15,7 @@ namespace ALC_Print
         PrintHelper m_BUCKET_PRT = null;
         
         private const string CN_CONFIG_XML_PATH = @".\HE_MES_Config.xml";
+        
         private DataTable m_dtXML = null;
         private HE_MES.DB.ORACLE_DB m_DB = null;
         public HE_MES.DB.ORACLE_DB DB
