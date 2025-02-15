@@ -92,12 +92,14 @@ E:\GIT\ALC_PRINT\ALC_Print\bin\Debug\DataMatrix.net.dll
 E:\GIT\ALC_PRINT\ALC_Print\bin\Debug\HE_MES.DB.dll
 E:\GIT\ALC_PRINT\ALC_Print\bin\Debug\HE_MES.FX.Utils.dll
 E:\GIT\ALC_PRINT\ALC_Print\bin\Debug\Oracle.ManagedDataAccess.dll
-E:\GIT\ALC_PRINT\ALC_Print\obj\Debug\ALC_Print.csprojResolveAssemblyReference.cache
+E:\GIT\ALC_PRINT\ALC_Print\obj\Debug\ALC_Print.csproj.AssemblyReference.cache
 E:\GIT\ALC_PRINT\ALC_Print\obj\Debug\ALC_Print.frmPrint.resources
 E:\GIT\ALC_PRINT\ALC_Print\obj\Debug\ALC_Print.frmRePrint.resources
 E:\GIT\ALC_PRINT\ALC_Print\obj\Debug\ALC_Print.Properties.Resources.resources
 E:\GIT\ALC_PRINT\ALC_Print\obj\Debug\ALC_Print.frmForcePrint.resources
-E:\GIT\ALC_PRINT\ALC_Print\obj\Debug\ALC_Print.csproj.GenerateResource.Cache
+E:\GIT\ALC_PRINT\ALC_Print\obj\Debug\ALC_Print.csproj.GenerateResource.cache
 E:\GIT\ALC_PRINT\ALC_Print\obj\Debug\ALC_Print.exe.licenses
+E:\GIT\ALC_PRINT\ALC_Print\obj\Debug\ALC_Print.csproj.CoreCompileInputs.cache
+E:\GIT\ALC_PRINT\ALC_Print\obj\Debug\ALC_Print.csproj.Up2Date
 E:\GIT\ALC_PRINT\ALC_Print\obj\Debug\ALC_Print.exe
 E:\GIT\ALC_PRINT\ALC_Print\obj\Debug\ALC_Print.pdb

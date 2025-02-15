@@ -550,7 +550,7 @@ namespace ALC_Print
                                     strITEM = "Q117";
                                     WritePRT("fITEMDESC", "SPOILER");
                                     break;
-                                //SPOILER
+                                //T/GATE
                                 case "Q100":
                                     strITEM = "Q100";
                                     WritePRT("fITEMDESC", "T/Gate");

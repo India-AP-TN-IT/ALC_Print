@@ -158,9 +158,34 @@ namespace ALC_Print
         {
             if (checkBox1.Checked)
             {
-                m_ParentFrm.SetClear(dtStartDate.Value.ToString("yyyyMMdd"), Txt_ClearSEQ.Text);
-                m_ParentFrm.ReLoadData();
+                if (string.IsNullOrEmpty(Txt_ClearSEQ.Text) || string.IsNullOrEmpty(Txt_ClearBSEQ.Text))
+                {
+                    MessageBox.Show("Please enter the FROM SEQ & BUCKET SEQ", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (ValidateText(Txt_ClearSEQ.Text) && ValidateText(Txt_ClearBSEQ.Text))
+                {
+                    m_ParentFrm.SetClear(dtStartDate.Value.ToString("yyyyMMdd"), Txt_ClearSEQ.Text, Txt_ClearBSEQ.Text);
+                    m_ParentFrm.ReLoadData();
+                }
+                else
+                {
+                    MessageBox.Show("This field accepts only Numbers", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
             }
+        }
+
+        private bool ValidateText(string text)
+        {
+            char[] characters = text.ToCharArray();
+
+            foreach (char c in characters)
+            {
+                if (!char.IsNumber(c))
+                    return false;
+            }
+            return true;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -168,13 +193,16 @@ namespace ALC_Print
             if(checkBox1.Checked)
             {
                 Txt_ClearSEQ.Enabled = true;
+                Txt_ClearBSEQ.Enabled = true;
                 button1.Enabled = true;
-
+                dtStartDate.Enabled=true;
             }
             else
             {
                 Txt_ClearSEQ.Enabled = false;
+                Txt_ClearBSEQ.Enabled = false;
                 button1.Enabled = false;
+                dtStartDate.Enabled = false;
             }
         }
  
