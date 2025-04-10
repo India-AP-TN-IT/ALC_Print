@@ -151,7 +151,7 @@ namespace ALC_Print
 
                     //TAIL GATE
                     case "Q030":
-                        m_prtCTL.Load(@".\RPTS_AP\BUCKET_RPT_40.xml", "BUCKET_RPT_40");
+                        m_prtCTL.Load(@".\RPTS_AP\BUCKET_RPT_20R.xml", "BUCKET_RPT_20R");
                         break;
                     //SPOILER
                     case "Q033":
