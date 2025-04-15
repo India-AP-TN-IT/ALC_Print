@@ -135,7 +135,7 @@ namespace ALC_Print
                     case "Q093":
                     case "Q088":
                     case "Q087":
-                        m_prtCTL.Load(@".\RPTS_AP\BUCKET_RPT_30.xml", "BUCKET_RPT_30");
+                        m_prtCTL.Load(@".\RPTS_AP\BUCKET_RPT_28.xml", "BUCKET_RPT_28");
                         break;
 
                     //GARNISH ASSY DR REAR

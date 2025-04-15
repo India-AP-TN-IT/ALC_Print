@@ -1,4 +1,6 @@
 D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\ALC_Print.exe.config
+D:\SRCS\Git\ALC\ALC_Print\ALC_Print\obj\Debug\ALC_Print.exe
+D:\SRCS\Git\ALC\ALC_Print\ALC_Print\obj\Debug\ALC_Print.pdb
 D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\HE_MES_Config.xml
 D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\RPTS\BUCKET_RPT_20.xml
 D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\RPTS\BUCKET_RPT_20R.xml
@@ -31,8 +33,6 @@ D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\RPTS\BUCKET_RPT_32.xml
 D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\RPTS\BUCKET_RPT_18.xml
 D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\RPTS\BUCKET_RPT_33.xml
 D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\RPTS\BUCKET_RPT_6.xml
-D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\ALC_Print.exe
-D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\ALC_Print.pdb
 D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\C1.C1Report.2.dll
 D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\C1.Win.C1BarCode.2.dll
 D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\C1.Win.C1Report.2.dll
@@ -46,5 +46,5 @@ D:\SRCS\Git\ALC\ALC_Print\ALC_Print\obj\Debug\ALC_Print.Properties.Resources.res
 D:\SRCS\Git\ALC\ALC_Print\ALC_Print\obj\Debug\ALC_Print.frmForcePrint.resources
 D:\SRCS\Git\ALC\ALC_Print\ALC_Print\obj\Debug\ALC_Print.csproj.GenerateResource.Cache
 D:\SRCS\Git\ALC\ALC_Print\ALC_Print\obj\Debug\ALC_Print.exe.licenses
-D:\SRCS\Git\ALC\ALC_Print\ALC_Print\obj\Debug\ALC_Print.exe
-D:\SRCS\Git\ALC\ALC_Print\ALC_Print\obj\Debug\ALC_Print.pdb
+D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\ALC_Print.exe
+D:\SRCS\Git\ALC\ALC_Print\ALC_Print\bin\Debug\ALC_Print.pdb

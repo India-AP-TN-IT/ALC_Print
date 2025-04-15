@@ -15,7 +15,7 @@
                   T/GATE Q030
                   GARNISH ASSY DR SIDE FL Q027, FR Q026, RL Q025, RR Q024
                   MOLD ASSY S/SIDE LH P401, RH P402  -->
-  <ITEM>Q030</ITEM>
+  <ITEM>Q036</ITEM>
   <!-- ITEM Count : D/TRIM FRT : 4(FL, FR, RR, RR) 
                    BP : 2(FRONT, REAR)
                    T/GATE : 1(REAR)
@@ -38,5 +38,5 @@
       GARNISH ASSY DR SIDE 60
       T/GATE 40 
       S/SIDE 24 -->
-  <BUCKET_COUNT>20</BUCKET_COUNT>
+  <BUCKET_COUNT>28</BUCKET_COUNT>
 </HE_MES_CONFIG>

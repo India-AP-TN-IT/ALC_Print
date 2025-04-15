@@ -320,7 +320,7 @@ namespace ALC_Print
                         dataGridView1.Columns["ITEM2"].Visible = true;
                         dataGridView1.Columns["ITEM3"].Visible = true;
                         dataGridView1.Columns["ITEM4"].Visible = true;
-                        dataGridView1.Columns["ITEM5"].Visible = true;
+                        dataGridView1.Columns["ITEM5"].Visible = false;
 
 
 
