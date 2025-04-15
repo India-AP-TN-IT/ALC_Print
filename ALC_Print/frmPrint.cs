@@ -15,6 +15,7 @@ namespace ALC_Print
         PrintHelper m_BUCKET_PRT = null;
         
         private const string CN_CONFIG_XML_PATH = @".\HE_MES_Config.xml";
+        
         private DataTable m_dtXML = null;
         private HE_MES.DB.ORACLE_DB m_DB = null;
         public HE_MES.DB.ORACLE_DB DB
@@ -126,7 +127,7 @@ namespace ALC_Print
                         strItem = "[SPOILER]";
                         Lbl_Item.Text = "SPOILER";
                         break;
-                    //SPOILER
+                    //T/GATE
                     case "Q100":
                         strItem = "[T/GATE]";
                         Lbl_Item.Text = "T/GATE";
@@ -561,7 +562,7 @@ namespace ALC_Print
                     , installPOS);
 
         }
-        public void SetClear(string ymd, string seq)
+        public void SetClear(string ymd, string seq,string bseq)
         {
             Dictionary<string, string> param = new Dictionary<string, string>();
             param.Add("IN_CORD", GetXML("CORCD"));
@@ -572,6 +573,7 @@ namespace ALC_Print
             param.Add("IN_CUST_LINE", GetXML("CUST_LINE"));
             param.Add("IN_ITEM", GetXML("ITEM"));
             param.Add("IN_SEQNO", seq);
+            param.Add("IN_BSEQ", bseq);
             m_DB.ExcuteNonQuery(GetPackageName()+".SET_INIT_ALC_REPORT", param);
         }
         public DataRow GetLastData()
