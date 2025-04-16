@@ -1,47 +1,3 @@
-<<<<<<< HEAD
-<HE_MES_CONFIG>
-  <CORCD>5200</CORCD>
-  <BIZCD>5210</BIZCD>
-  <LANGUAGE>EN</LANGUAGE>
-  <!-- DBNAME>172.22.151.155</DBNAME>  -->
-  <DBNAME>172.22.151.203</DBNAME>
-  <DBUID>sis</DBUID>
-  <DBPWD>sis100</DBPWD>
-  <DBSERVICE>SYAP</DBSERVICE>
-  <RELOAD_TICK_SEC>10</RELOAD_TICK_SEC>
-  <OUR_PAPER_PRINT_YN>N</OUR_PAPER_PRINT_YN>
-  <PREVIEW_PRINT_YN>Y</PREVIEW_PRINT_YN>
-  <!-- ITEM TYPE : DTFL Q094, DTFR Q093, DTRL Q088  DTRR Q087
-                  BUPMER FRT Q036, BUMPER REAR Q034
-                  T/GATE Q030
-                  GARNISH ASSY DR SIDE FL Q027, FR Q026, RL Q025, RR Q024
-                  MOLD ASSY S/SIDE LH P401, RH P402  -->
-  <ITEM>Q036</ITEM>
-  <!-- ITEM Count : D/TRIM FRT : 4(FL, FR, RR, RR) 
-                   BP : 2(FRONT, REAR)
-                   T/GATE : 1(REAR)
-                   GARNISH ASSY DR SIDE : 4(FL, FR, RL, RR) 
-                   MOLD ASSY S/SIDE : 2(LH, RH)  -->
-  <ITEM_COUNT>1</ITEM_COUNT>
-  <CUSTCD>KMI</CUSTCD>
-  <CUST_PLANT>1</CUST_PLANT>
-  <CUST_LINE>1</CUST_LINE>
-  <!-- Unit count for printing our report 
-      BP 8
-      D/TRIM 14
-      GRARNISH ASSY DR SIDE 30 
-      T/GATE 20 
-      S/SIDE 24 -->
-  <OUR_PAPER_COUNT>8</OUR_PAPER_COUNT>
-  <!-- Unit count for printing customer report(Bucket-Trolley Size) 
-      BP 8
-      D/TRIM 28
-      GARNISH ASSY DR SIDE 60
-      T/GATE 40 
-      S/SIDE 24 -->
-  <BUCKET_COUNT>28</BUCKET_COUNT>
-</HE_MES_CONFIG>
-=======
 <?xml version="1.0" encoding="utf-8" ?>
 
 <HE_MES_CONFIG>
@@ -88,17 +44,6 @@
   <CUST_LINE>1</CUST_LINE>
 
 
-  <!--Unit count for printing customer report(Bucket-Trolley Size) 
-      BP 8
-      D/TRIM 16s
-      GARNISH ASSY DR SIDE 60
-      T/GATE 40 
-      S/SIDE 12-->
-  <BUCKET_COUNT>18</BUCKET_COUNT>
-
+  <BUCKET_COUNT>28</BUCKET_COUNT>
 </HE_MES_CONFIG>
 
-
-
-
->>>>>>> 8ace7a9647289d5de41bcfc2b0c9958750334ac3

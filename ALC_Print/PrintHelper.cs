@@ -150,6 +150,7 @@ namespace ALC_Print
                         break;
 
                     //TAIL GATE
+                    case "Q023":
                     case "Q030":
                         m_prtCTL.Load(@".\RPTS_AP\BUCKET_RPT_20R.xml", "BUCKET_RPT_20R");
                         break;
@@ -652,6 +653,13 @@ namespace ALC_Print
                                     break;
 
                                 //T/GATE
+                                case "Q023":
+                                    if (itemIdx == 1)
+                                    {
+                                        strITEM = "Q023";
+                                        WritePRT("fITEMDESC", "TAIL GATE");
+                                    }
+                                    break;
                                 case "Q030":
                                     if (itemIdx == 1)
                                     {

@@ -164,6 +164,7 @@ namespace ALC_Print
                         break;
 
                     //TAIL GATE
+                    case "Q023":
                     case "Q030":
                         strItem = "[TAIL GATE]";
                         Lbl_Item.Text = "T/GATE";
@@ -249,6 +250,7 @@ namespace ALC_Print
                         break;
 
                     //TAIL GATE
+                    case "Q023":
                     case "Q030":
                         dataGridView1.Columns["ITEM1"].Visible = true;
 
@@ -334,6 +336,7 @@ namespace ALC_Print
                         break;
 
                     //TAIL GATE
+                    case "Q023":
                     case "Q030":
                         dataGridView1.Columns["ITEM1"].Visible = true;
 
