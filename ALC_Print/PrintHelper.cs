@@ -107,9 +107,13 @@ namespace ALC_Print
                     //S/SIDE
                     case "Q109":
                     case "Q008":
-                        if (custInfo.cust_plant == "HVF1")
+                        if (custInfo.cust_plant == "HVF1" && custInfo.cust_line=="1")
                         {
                             m_prtCTL.Load(@".\RPTS\BUCKET_RPT_12.xml", "BUCKET_RPT_12");
+                        }
+                        else if (custInfo.cust_plant == "HVF1" && custInfo.cust_line == "2")
+                        {
+                            m_prtCTL.Load(@".\RPTS\BUCKET_RPT_12_LUG_01.xml", "BUCKET_RPT_12_LUG_01");
                         }
                         else
                         {
@@ -415,6 +419,10 @@ namespace ALC_Print
                 {
                     bMerge = true;
                 }
+                if (strXmlItem == "Q008" || strXmlItem == "Q109" && m_CustInfo.cust_plant == "HVF1" && m_CustInfo.cust_line == "2")
+                {
+                    bMerge = true;
+                }
                 dt = SkipDataProcess(itemCnt, dt, bMerge);
                 Dictionary<string, SUMM_ST> dicSUMM = new Dictionary<string, SUMM_ST>();
                 Dictionary<string, SUMM_ST> dicSUMM1 = new Dictionary<string, SUMM_ST>();
@@ -563,12 +571,26 @@ namespace ALC_Print
                                     if (itemIdx == 1)
                                     {
                                         strITEM = "Q008";
-                                        WritePRT("fITEMDESC", "Luggage SIDE LH");
+                                        if (m_CustInfo.cust_plant == "HVF1" && m_CustInfo.cust_line == "2")
+                                        {
+                                            WritePRT("fITEMDESC", "Luggage SIDE LH/RH");
+                                        }
+                                        else
+                                        {
+                                            WritePRT("fITEMDESC", "Luggage SIDE LH");
+                                        }
                                     }
                                     else if (itemIdx == 2)
                                     {
                                         strITEM = "Q109";
-                                        WritePRT("fITEMDESC", "Luggage SIDE RH");
+                                        if (m_CustInfo.cust_plant == "HVF1" && m_CustInfo.cust_line == "2")
+                                        {
+                                            WritePRT("fITEMDESC", "Luggage SIDE LH/RH");
+                                        }
+                                        else
+                                        {
+                                            WritePRT("fITEMDESC", "Luggage SIDE RH");
+                                        }
                                     }
                                     break;
                             }
@@ -732,7 +754,14 @@ namespace ALC_Print
                         //strBSEQCD_RCV_COUNT = dt.Rows[row]["ITEM" + itemIdx.ToString() + "_BSEQCD_RCV_COUNT"].ToString();
                         if(bMerge)
                         {
-                            strALC_M = dt.Rows[row]["ITEM" + (itemIdx+2).ToString()].ToString();
+                            if (m_CustInfo.cust_plant == "HVF1" && m_CustInfo.cust_line == "2")
+                            {
+                                strALC_M = dt.Rows[row]["ITEM" + (itemIdx + 1).ToString()].ToString();
+                            }
+                            else
+                            {
+                                strALC_M = dt.Rows[row]["ITEM" + (itemIdx + 2).ToString()].ToString();
+                            }
                         }
                         if (row == 0)
                         {
@@ -881,11 +910,26 @@ namespace ALC_Print
             }
             else if (item == "Q008")
             {
-                return "LH";
+                if (m_CustInfo.cust_plant == "HVF1" && m_CustInfo.cust_line == "2") 
+                { 
+                    return "LH/RH"; 
+                }
+                else 
+                {
+                    return "LH"; 
+                }
+               
             }
             else if (item == "Q109")
             {
-                return "RH";
+                if (m_CustInfo.cust_plant == "HVF1" && m_CustInfo.cust_line == "2")
+                {
+                    return "LH/RH";
+                }
+                else
+                {
+                    return "RH";
+                }
             }
             else if(item == "Q045")
             {
