@@ -80,7 +80,6 @@ E:\GIT\ALC_PRINT\ALC_Print\bin\Debug\RPTS\BUCKET_RPT_32.xml
 E:\GIT\ALC_PRINT\ALC_Print\bin\Debug\RPTS\BUCKET_RPT_18.xml
 E:\GIT\ALC_PRINT\ALC_Print\bin\Debug\RPTS\BUCKET_RPT_33.xml
 E:\GIT\ALC_PRINT\ALC_Print\bin\Debug\RPTS\BUCKET_RPT_12_LUG.xml
-E:\GIT\ALC_PRINT\ALC_Print\bin\Debug\RPTS\BUCKET_RPT_12_LUG_01.xml
 E:\GIT\ALC_PRINT\ALC_Print\bin\Debug\RPTS\BUCKET_RPT_6.xml
 E:\GIT\ALC_PRINT\ALC_Print\bin\Debug\ALC_Print.exe.config
 E:\GIT\ALC_PRINT\ALC_Print\bin\Debug\ALC_Print.exe

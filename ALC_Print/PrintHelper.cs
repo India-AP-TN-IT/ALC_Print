@@ -113,7 +113,7 @@ namespace ALC_Print
                         }
                         else if (custInfo.cust_plant == "HVF1" && custInfo.cust_line == "2")
                         {
-                            m_prtCTL.Load(@".\RPTS\BUCKET_RPT_12_LUG_01.xml", "BUCKET_RPT_12_LUG_01");
+                            m_prtCTL.Load(@".\RPTS\BUCKET_RPT_12_LUG.xml", "BUCKET_RPT_12_LUG");
                         }
                         else
                         {
